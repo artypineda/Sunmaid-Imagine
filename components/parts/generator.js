@@ -18,7 +18,7 @@ const Generator = (props) => {
   const [jobs, setJobs] = useState([]);
   const [words, setWords] = useState([]);
   const [flavors, setFlavors] = useState([]);
-  const [teams, setTeams] = useState("");
+  const [descriptor, setDescriptor] = useState("");
 
   const imaginationFunc = async () => {
     const users = await axios.get("https://arturoweb.com/apis/sunmaid/list");
@@ -34,6 +34,11 @@ const Generator = (props) => {
     let flavorsList = users.data.imagination.flavors;
     let rand3 = Math.floor(Math.random() * flavorsList.length);
     setFlavors(flavorsList[rand3].flavor);
+
+    const descriptor =
+      "I'm happy to introduce my new job title as part of Sun-Maid Raisin's brand new Imagination Department! Stay tuned-more exciting developments are coming.";
+
+    setDescriptor(descriptor);
   };
 
   useEffect(() => {
@@ -63,11 +68,15 @@ const Generator = (props) => {
         </div>
       </div>
 
+      <div className={styles.socialtext}>
+        <h3>Share Your Results</h3>
+      </div>
+
       <div className={styles.socials}>
         <div className={styles.fb_share}>
           <FacebookShareButton
             url="https://sunmaidimagination.com"
-            quote={`Imagination Title: ${jobs} ${words} ${flavors}`}
+            quote={`Imagination Title: ${jobs} ${words} ${flavors}\n\n  –  ${descriptor}`}
             hashtag="#SunmaidImagination"
           >
             <FacebookIcon />
@@ -77,7 +86,7 @@ const Generator = (props) => {
         <div className={styles.tw_share}>
           <TwitterShareButton
             url="https://sunmaidimagination.com"
-            title={`${name}: ${jobs} ${words} ${flavors}`}
+            title={`${name}: ${jobs} ${words} ${flavors}\n\n${descriptor}`}
             quote={`Imagination Department: ${jobs} ${words} ${flavors}`}
             hashtags={["SunmaidImagination", "Sunmaid"]}
           >

@@ -19,7 +19,7 @@ export default function Layout({ children, homepg }) {
           <meta
             property="og:image"
             //content={`https://og-image.now.sh/SunMaid%20Imagination.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg&images=https%3A%2F%2Farturoweb.com%2Fapis%2Fsunmaid%2Fsunmaid.png&widths=undefined&widths=auto&heights=undefined&heights=200`}
-            content={`https://sunmaidimagination.com/images/ogimage.png`}
+            content={`https://sunmaidimagination.com/images/ogimage1.png`}
           />
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />

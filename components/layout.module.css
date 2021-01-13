@@ -205,12 +205,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 @media (max-width: 699px) {
   .socials {
     flex-direction: column;
   }
+}
+
+.socialtext {
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  font-family: var(--font1);
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 .fb_share {
@@ -225,20 +235,6 @@
   background: var(--bluefb);
   padding-left: 1.75rem;
   font-size: 1rem;
-}
-
-.fb_share button:before {
-  content: "Share Your Results";
-  display: flex;
-  align-items: center;
-  height: 100%;
-  background-color: var(--bluefb);
-  padding-left: 1.4rem;
-  padding-right: 0px;
-  justify-content: center;
-  color: white;
-  font-family: var(--font1);
-  font-weight: 600;
 }
 
 .fb_share button {
