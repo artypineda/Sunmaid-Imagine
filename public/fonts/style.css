@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Tropiline-Black";
+  src: url("Tropiline-Black.otf");
+  src: url("Tropiline-Black.otf?#iefix") format("embedded-opentype"),
+    url("Tropiline-Black.woff2") format("woff2"),
+    url("Tropiline-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
