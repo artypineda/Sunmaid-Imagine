@@ -11,7 +11,7 @@ const Flavors = (props) => {
         </div>
       );
     } else {
-      return "No Jobs Found";
+      return <p>No Flavor Found</p>;
     }
   };
 

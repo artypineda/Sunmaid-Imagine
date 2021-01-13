@@ -11,7 +11,7 @@ const Jobs = (props) => {
         </div>
       );
     } else {
-      return "No Jobs Found";
+      return <p>No Job Found</p>;
     }
   };
 

@@ -11,7 +11,7 @@ const Words = (props) => {
         </div>
       );
     } else {
-      return "No Jobs Found";
+      return <p>No Word Found</p>;
     }
   };
 

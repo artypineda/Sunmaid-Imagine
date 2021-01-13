@@ -7,7 +7,7 @@ export default function Intro() {
       <section className={`${styles.center} mt100`}>
         <h2>Generate Your Own</h2>
         <h2 className="special1">imaginative job title</h2>
-        <h2 className="special2">Job Title</h2>
+        {/* <h2 className="special2">Job Title</h2> */}
 
         <article className="container">
           <p>
