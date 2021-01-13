@@ -216,6 +216,9 @@
 .fb_share {
   display: flex;
   align-items: center;
+  margin-right: 1rem;
+  -webkit-box-shadow: 0 0 9px rgba(0, 0, 255, 0.05);
+  box-shadow: 0 0 9px rgba(0, 0, 255, 0.05);
 }
 
 .fb_share h2 {
@@ -246,6 +249,8 @@
 }
 
 .tw_share {
+  -webkit-box-shadow: 0 0 9px rgba(0, 0, 255, 0.05);
+  box-shadow: 0 0 9px rgba(0, 0, 255, 0.05);
   height: 64px;
 }
 
@@ -254,6 +259,9 @@
   border-radius: 0;
 }
 @media (max-width: 699px) {
+  .fb_share {
+    margin-right: 0;
+  }
   .fb_share button:before {
     display: none;
   }

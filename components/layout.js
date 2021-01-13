@@ -25,7 +25,7 @@ export default function Layout({ children, homepg }) {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <header className={styles.header}>
-          <a href="https://sunmaid.com/">
+          <a href="https://www.sunmaid.com/imaginethat/">
             <img
               src="/images/smr_logo.png"
               alt="Sunmaid Logo"
@@ -42,7 +42,7 @@ export default function Layout({ children, homepg }) {
           ${styles.goTo}
       `}
         >
-          <a href="/">
+          <a href="https://www.sunmaid.com/imaginethat/">
             <img src="/images/goTo.png" />
           </a>
 
