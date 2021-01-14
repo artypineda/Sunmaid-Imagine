@@ -27,7 +27,7 @@ export default function Layout({ children, homepg }) {
         <header className={styles.header}>
           <a href="https://www.sunmaid.com/imaginethat/">
             <img
-              src="/images/smr_logo.png"
+              src="/images/smr_logo_1.png"
               alt="Sunmaid Logo"
               className="moveDown"
               width="238"
