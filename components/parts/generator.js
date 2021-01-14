@@ -21,7 +21,9 @@ const Generator = (props) => {
   const [descriptor, setDescriptor] = useState("");
 
   const imaginationFunc = async () => {
-    const users = await axios.get("https://arturoweb.com/apis/sunmaid/list");
+    const users = await axios.get(
+      "https://sunmaidimagination.com/api/list.json"
+    );
 
     let jobsList = users.data.imagination.jobs;
     let rand1 = Math.floor(Math.random() * jobsList.length);
