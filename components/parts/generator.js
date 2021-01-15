@@ -75,26 +75,30 @@ const Generator = (props) => {
       </div>
 
       <div className={styles.socials}>
-        <div className={styles.fb_share}>
-          <FacebookShareButton
-            url="sunmaid.com/imaginethat"
-            quote={`Imagination Title: ${jobs} ${words} ${flavors}\n\n  –  ${descriptor}`}
-            hashtag="#ImagineThat"
-          >
-            <FacebookIcon />
-          </FacebookShareButton>
-        </div>
+        <a href="/#facebook">
+          <div className={styles.fb_share}>
+            <FacebookShareButton
+              url="sunmaid.com/imaginethat"
+              quote={`Imagination Title: ${jobs} ${words} ${flavors}\n\n  –  ${descriptor}`}
+              hashtag="#ImagineThat"
+            >
+              <FacebookIcon />
+            </FacebookShareButton>
+          </div>
+        </a>
 
-        <div className={styles.tw_share}>
-          <TwitterShareButton
-            url="https://sunmaid.com/imaginethat"
-            title={`${name}: ${jobs} ${words} ${flavors}\n\n${descriptor}`}
-            quote={`Imagination Department: ${jobs} ${words} ${flavors}`}
-            hashtags={["ImagineThat", "Sunmaid"]}
-          >
-            <TwitterIcon />
-          </TwitterShareButton>
-        </div>
+        <a href="/#twitter">
+          <div className={styles.tw_share}>
+            <TwitterShareButton
+              url="https://sunmaid.com/imaginethat"
+              title={`${name}: ${jobs} ${words} ${flavors}\n\n${descriptor}`}
+              quote={`Imagination Department: ${jobs} ${words} ${flavors}`}
+              hashtags={["ImagineThat", "Sunmaid"]}
+            >
+              <TwitterIcon />
+            </TwitterShareButton>
+          </div>
+        </a>
       </div>
     </>
   );

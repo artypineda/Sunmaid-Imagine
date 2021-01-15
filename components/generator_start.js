@@ -31,7 +31,9 @@ const Generator_Start = () => {
               <h3 className="sr-only">Refresh The Page</h3>
               <div>
                 <input disabled text="text" value={name} required />
-                <button type="submit">Again?</button>
+                <a href="/#tryAgain">
+                  <button type="submit">Again?</button>
+                </a>
               </div>
             </form>
 
@@ -51,7 +53,9 @@ const Generator_Start = () => {
                   placeholder="Your Name"
                   required
                 />
-                <button type="submit">Generate</button>
+                <a href="/#generate">
+                  <button type="submit">Generate</button>
+                </a>
               </div>
             </form>
           </section>
