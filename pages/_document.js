@@ -18,6 +18,7 @@ class MyDocument extends Document {
           ></script>
 
           <script src="/ga.js" async></script>
+          <script async src="/ga_tag.js"></script>
         </Head>
 
         <body>
