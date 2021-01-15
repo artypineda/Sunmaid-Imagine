@@ -38,7 +38,7 @@ const Generator = (props) => {
     setFlavors(flavorsList[rand3].flavor);
 
     const descriptor =
-      "I'm happy to introduce my new job title as part of Sun-Maid new Imagination That Campaign! We’re committed to fueling children’s imaginations one whole fruit snack at a time.";
+      "I'm happy to introduce my new job title as part of Sun-Maid's new Imagine That Campaign! We’re committed to fueling children’s imaginations one whole fruit snack at a time.";
 
     setDescriptor(descriptor);
   };
@@ -87,7 +87,7 @@ const Generator = (props) => {
 
         <div className={styles.tw_share}>
           <TwitterShareButton
-            url="sunmaid.com/imaginethat"
+            url="https://sunmaid.com/imaginethat"
             title={`${name}: ${jobs} ${words} ${flavors}\n\n${descriptor}`}
             quote={`Imagination Department: ${jobs} ${words} ${flavors}`}
             hashtags={["ImagineThat", "Sunmaid"]}
